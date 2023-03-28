@@ -53,5 +53,15 @@ class User
         }
         echo "Booking not found";
     }
+
+    public function __toString(){
+        $str = "User: \n";
+        $str .= "Name: $this -> name \n";
+        $str .= "Bookings: $this -> bookings \n";
+        $str .= "Booking Date: $this -> bookingDate \n";
+        $str .= "Number of guests: $this -> numOfGuests \n";
+
+        return $str;
+    }
 }
 

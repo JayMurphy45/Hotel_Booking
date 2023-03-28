@@ -8,7 +8,7 @@ class Manager extends User
     private int $phoneNumber;
 
     public function __construct($id, $firstName, $lastName, $phoneNumber){
-        $this -> id = $id;
+        	$this -> id = $id;
             $this -> firstName = $firstName;
             $this -> lastName = $lastName;
             $this -> phoneNumber = $phoneNumber;
