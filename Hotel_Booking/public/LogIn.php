@@ -33,21 +33,26 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     <?php if (isset($error)) {?>
         <div><?php echo $error?></div>
     <?php } ?>
 
-    <form>
+    <h1>Login</h1>
+    <form action="#" method="post">
         <label for="Username">username</label>
         <input type="text" name="username">
+
+        <label for="Password">password</label>
+        <input type="password" name="password">
 
         <button type="submit">Login</button>
 
     </form>
 
-    <a href="SighnUp.php">Sighn Up</a>
+    <p><a href="SighnUp.php">Sighn Up</a></p>
 
 </body>
 </html>

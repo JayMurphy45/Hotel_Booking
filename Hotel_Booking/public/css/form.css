@@ -1,0 +1,56 @@
+body {
+    background-color: #f2f2f2; /* light grey background color */
+  }
+  
+  h1 {
+    text-align: center; /* center the h1 heading */
+  }
+  
+  form {
+    background-color: #ffffff; /* white background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* center the form */
+    max-width: 400px; /* set a maximum width for the form */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #444444; /* grey label text color */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #444444; /* grey button background color */
+    color: #ffffff; /* white button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555555; /* darker grey button background color on hover */
+  }
+  
+  a {
+    display: block;
+    margin-top: 20px;
+    color: #444444; /* grey link text color */
+  }
+
+  p{
+    text-align: center;
+  }
