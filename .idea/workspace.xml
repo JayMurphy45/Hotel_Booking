@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb3cde10-e4a0-4624-a7e1-67024901adb3" name="Changes" comment="" />
+    <list default="true" id="fb3cde10-e4a0-4624-a7e1-67024901adb3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel_Booking/public/CheckOut.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hotel_Booking/public/userProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Booking.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/MonthlyReport.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/system/Payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Receipt.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/system/Receipt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/system/Room.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/Guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/users/Guest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/Manager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/users/Staff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/UserProfile.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +23,9 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +45,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/jamie/OneDrive - Technological University Dublin/Year2/Semester 2/Advanced Programming/Labs 5-8/Lab05/Lab05Part1"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jamie/OneDrive/Desktop/Projects/Hotel_Booking",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,8 +60,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680115732050</updated>
+      <workItem from="1680355937028" duration="3238000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
