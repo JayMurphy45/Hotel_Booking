@@ -1,3 +1,14 @@
+<?php 
+if($_SESSION['Active'] == false){
+    header("location::login.php");
+    exit;
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

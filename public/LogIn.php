@@ -1,33 +1,27 @@
 <?php
-session_start();
+require_once('./config.php');
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+if ($_POST['Submit']) {
+    //check if username and passwords match
+    if ($_POST['username'] == $username && ($_POST['password'] == $password)) {
 
-    //check if user exists in file
-    $file = 'users.txt';
-    if(file_exists($file))
-    {
-        $lines = file($file);
-        foreach ($lines as $line)
-        {
-            list($stored_username, $hashed_password) = explode(':', $line);
-            if(trim($username) == trim($stored_username) && password_verify($password, trim($hashed_password)))
-            {
-                $_SESSION['username'] = $username;
-                header('Location: home.php');
-                exit;
-            }
-        }
+        $_SESSION['username'] = $username; //store username to session
+        $_SESSION['Active'] = true;
+        header("location::index.php"); // redirect browser
+        exit;//terminate code
+    } else {
+        
+        echo 'Incorrect username or password';
     }
-    $error = 'Invalid username or password';
 }
+
+
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,9 +29,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <title>Login</title>
     <link rel="stylesheet" href="css/form.css">
 </head>
+
 <body>
-    <?php if (isset($error)) {?>
-        <div><?php echo $error?></div>
+    <?php if (isset($error)) { ?>
+        <div><?php echo $error ?></div>
     <?php } ?>
 
     <h1>Login</h1>
@@ -55,4 +50,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <p><a href="SignUp.php">Sign Up</a></p>
 
 </body>
+
 </html>
