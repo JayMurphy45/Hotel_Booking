@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3cde10-e4a0-4624-a7e1-67024901adb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel_Booking/public/CheckOut.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hotel_Booking/public/userProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DBconnect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Booking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/MonthlyReport.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/system/Payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Receipt.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/system/Receipt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/system/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/system/Room.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/Guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/users/Guest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/Manager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_Booking/users/Staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel_Booking/users/UserProfile.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +33,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jamie/OneDrive/Desktop/Projects/Hotel_Booking",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dima/Documents/GitHub/Project Beta/Hotel_Booking&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="LogIn.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Hotel_Booking/public/LogIn.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.LogIn.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +67,9 @@
       <option name="presentableId" value="Default" />
       <updated>1680115732050</updated>
       <workItem from="1680355937028" duration="3401000" />
+      <workItem from="1681571734234" duration="26000" />
+      <workItem from="1681571761508" duration="637000" />
+      <workItem from="1681675780132" duration="18000" />
     </task>
     <servers />
   </component>
