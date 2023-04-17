@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3cde10-e4a0-4624-a7e1-67024901adb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DBconnect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,8 @@
       <workItem from="1680355937028" duration="3401000" />
       <workItem from="1681571734234" duration="26000" />
       <workItem from="1681571761508" duration="637000" />
-      <workItem from="1681675780132" duration="18000" />
+      <workItem from="1681675780132" duration="186000" />
+      <workItem from="1681725346861" duration="599000" />
     </task>
     <servers />
   </component>
