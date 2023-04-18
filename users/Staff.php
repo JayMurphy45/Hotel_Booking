@@ -3,17 +3,17 @@
 class Staff extends User
 {
     private int $id;
-    private String $firstName;
-    private String $lastName;
-    private int $phoneNumber;
+    private string $firstName;
+    private string $lastName;
+    private string $phoneNumber;
 
     /**
      * @param int $id
-     * @param String $firstName
-     * @param String $lastName
+     * @param string $firstName
+     * @param string $lastName
      * @param int $phoneNumber
      */
-    public function __construct(int $id, string $firstName, string $lastName, int $phoneNumber)
+    public function __construct(int $id, string $firstName, string $lastName, string $phoneNumber)
     {
         $this->id = $id;
         $this->firstName = $firstName;
@@ -38,7 +38,7 @@ class Staff extends User
     }
 
     /**
-     * @return String
+     * @return string
      */
     public function getFirstName(): string
     {
@@ -46,7 +46,7 @@ class Staff extends User
     }
 
     /**
-     * @param String $firstName
+     * @param string $firstName
      */
     public function setFirstName(string $firstName): void
     {
@@ -54,7 +54,7 @@ class Staff extends User
     }
 
     /**
-     * @return String
+     * @return string
      */
     public function getLastName(): string
     {
@@ -62,7 +62,7 @@ class Staff extends User
     }
 
     /**
-     * @param String $lastName
+     * @param string $lastName
      */
     public function setLastName(string $lastName): void
     {
@@ -72,7 +72,7 @@ class Staff extends User
     /**
      * @return int
      */
-    public function getPhoneNumber(): int
+    public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
     }
