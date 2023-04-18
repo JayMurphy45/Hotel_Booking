@@ -34,7 +34,7 @@ if($_SESSION['Active'] == false){
         <font size= 5>
         <li><a href="Booking.php">Booking</a></li>
         <li><a href="CheckOut.php">Check Out</a></li>
-        <li><a href="LogIn.php">Login</a></li>
+        <li><a href="../LogIn.php">Login</a></li>
         <li><a href="SignUp.php">Sign Up</a></li>
         <li><a href="userProfile.php">Profile</a></li>
         </font>

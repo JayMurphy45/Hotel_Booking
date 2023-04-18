@@ -1,5 +1,5 @@
 <?php
-require_once('./config.php');
+require_once('config.php');
 
 if ($_POST['Submit']) {
     //check if username and passwords match
@@ -27,7 +27,7 @@ if ($_POST['Submit']) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="public/css/form.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@ if ($_POST['Submit']) {
 
     </form>
 
-    <p><a href="SignUp.php">Sign Up</a></p>
+    <p><a href="public/SignUp.php">Sign Up</a></p>
 
 </body>
 
