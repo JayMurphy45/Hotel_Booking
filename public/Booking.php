@@ -134,27 +134,81 @@ class Booking
     }
 }
 
+/*
+Shopping cart Functionality
+*/
+require_once __DIR__ . '/../src/functions.php';
+
+$products = [];
+$products[] = [
+    'name' => 'Single',
+    'description' => 'Single Room',
+    'Price' => '200',
+    'stars' => 4,
+    'image' => 'Images/SingleRoom.avif'
+];
+
+$products[] = [
+    'name' => 'Double',
+    'description' => 'Double Room',
+    'Price' => '400',
+    'stars' => 4,
+    'image' => 'Images/DoubleRoom.avif'
+];
+
+$products[] = [
+    'name' => 'Suite',
+    'description' => 'Double Room',
+    'Price' => '400',
+    'stars' => 4,
+    'image' => 'Images/DoubleRoom.avif'
+];
+
+require_once __DIR__ . '/../src/functions.php';
+$products = getAllProducts();
+$cartItems = getShoppingCart();
+// choose page to display
+$page = 'list.php';
+$action = filter_input(INPUT_GET, 'action');
+if ('cart' == $action) {
+    // if found, change template file to be displayed
+    $page = 'checkout.php';
+}
 ?>
 
-<?php require ("Layouts/Header.php");?>
-
+<?php require("Layouts/Header.php"); ?>
+<!-- For each to represent stars for rooms -->
+<?php
+foreach ($products as $id => $product)
+    $price = number_format($product['price'], 2)
+?>
 <h1>Booking Page</h1>
 
 <h2>Single Room</h2>
 <img src="Images/SingleRoom.avif" alt="Single Room" height="500" width="500">
 <p>Room Capacity: 1</p>
 <p>This room is a very cosy delight for those who plan to stay alone for 1 or 2 days.</p>
+<form method="post" action="/?action=addToCart&id=<?= $id
+                                                    ?>" style="display: inline">
+    <button class="btn btn-primary btn-sm">Add To Cart</button>
+</form>
 
 <h2>Double Room</h2>
 <img src="Images/DoubleRoom.jpg" alt="Double Room" height="500" width="500">
 <p>Room Capacity: 2</p>
 <p>This room is a very roomy closure for two people to spend there time it comes with one double bed (Can be seperated) a bathroom and larger than average wardrobe for 2 people to share.</p>
-
+<form method="post" action="/?action=addToCart&id=<?= $id
+                                                    ?>" style="display: inline">
+    <button class="btn btn-primary btn-sm">Add To Cart</button>
+</form>
 <h2>Suite</h2>
 <img src="Images/Suite.jpg" alt="Suite" height="500" width="500">
 <p>Room Capacity: 4</p>
 <p>This is our top of the line room for those who have multiple friends it consists of 4 bedrooms 3 bathrooms and 4 walk in wardrobes. This room is 2 floored and consists of our first class snackbar(anything taken will be added to your bill)</p>
-
+<form method="post" action="/?action=addToCart&id=<?= $id
+                                                    ?>" style="display: inline">
+    <button class="btn btn-primary btn-sm">Add To Cart</button>
+</form>
 
 <h3>Please select in our <a href="CheckOut.php">checkout</a> page</h3>
 
@@ -162,7 +216,4 @@ class Booking
 
 
 
-<?php require ("Layouts/Footer.php")?>
-
-
-
+<?php require("Layouts/Footer.php") ?>
