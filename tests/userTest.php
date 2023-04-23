@@ -1,5 +1,5 @@
 <?php 
-require('users/User.php');
+require_once('users/User.php');
 
 $jamie = new Staff(1,"Jamie","Murphy","085-747-7464");
 
@@ -11,5 +11,3 @@ $Dumitru = new Guest(5,"Dima","0856464252", "Pojoga");
 echo $jamie;
 echo $luke;
 echo $Dumitru;
-
-?>
