@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fb3cde10-e4a0-4624-a7e1-67024901adb3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/Layouts/Booking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/Booking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +51,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\Hotel_Booking\public\Layouts" />
       <recent name="C:\laragon\www\Hotel_Booking\public" />
       <recent name="C:\laragon\www\Hotel_Booking" />
       <recent name="C:\laragon\www\Hotel_Booking\tests" />
+      <recent name="C:\laragon\www\Hotel_Booking\public\Layouts" />
       <recent name="C:\Users\mahoo\Documents\GitHub\Hotel_Booking" />
     </key>
   </component>
@@ -86,7 +86,7 @@
       <workItem from="1682338346792" duration="80000" />
       <workItem from="1682338429252" duration="105000" />
       <workItem from="1682338550954" duration="3818000" />
-      <workItem from="1682344766108" duration="1081000" />
+      <workItem from="1682344766108" duration="2446000" />
     </task>
     <servers />
   </component>
