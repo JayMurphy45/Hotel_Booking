@@ -47,7 +47,7 @@ if ($_POST['Submit']) {
 
     </form>
 
-    <p><a href="public/SignUp.php">Sign Up</a></p>
+    <p><a href="SignUp.php">Sign Up</a></p>
 
 </body>
 

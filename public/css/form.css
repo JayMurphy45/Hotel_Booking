@@ -4,6 +4,7 @@ body {
   
   h1 {
     text-align: center; /* center the h1 heading */
+    img-align: center;
   }
   
   form {
