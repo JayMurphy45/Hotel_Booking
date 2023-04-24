@@ -47,7 +47,7 @@ class User
         foreach ($this->bookings as $i => $booking){
             if ($booking['id'] == $booking_id){
                 array_splice($this ->bookings, $i, 1);
-                echo "Booking $booking_id has neen cancelled. \n";
+                echo "Booking $booking_id has been cancelled. \n";
                 return;
             }
         }

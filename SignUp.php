@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === ['POST']){
 <head>
     <meta charset="UTF-8">
     <title>Signup</title>
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="public/css/form.css">
 </head>
 <body>
 <!--- Print error if credentials are incorrect----->
@@ -61,6 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] === ['POST']){
     <button type="submit">Sign Up</button>
 </form>
 
-<p><a href="../LogIn.php">Login</a></p>
+<p><a href="LogIn.php">Login</a></p>
 </body>
 </html>

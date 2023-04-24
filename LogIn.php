@@ -7,10 +7,11 @@ if ($_POST['Submit']) {
 
         $_SESSION['username'] = $username; //store username to session
         $_SESSION['Active'] = true;
+        $_SESSION['Submit'] = true;
         header("location::index.php"); // redirect browser
         exit;//terminate code
     } else {
-        
+
         echo 'Incorrect username or password';
     }
 }
@@ -43,11 +44,13 @@ if ($_POST['Submit']) {
         <label for="Password">Password</label>
         <input type="password" name="password">
 
-        <button type="submit">Login</button>
+        <button type="submit">Login<a href ="index.php">Login</button>
+
+
 
     </form>
 
-    <p><a href="public/SignUp.php">Sign Up</a></p>
+    <p><a href="SignUp.php">Sign Up</a></p>
 
 </body>
 
