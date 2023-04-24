@@ -185,7 +185,7 @@ foreach ($products as $id => $product)
 <h1>Booking Page</h1>
 
 <h2>Single Room</h2>
-<img src="../public/Images/SingleRoom.avif" alt="Single Room" height="500" width="500">
+<img src="public/Images/SingleRoom.avif" alt="Single Room" height="500" width="500">
 <p>Room Capacity: 1</p>
 <p>This room is a very cosy delight for those who plan to stay alone for 1 or 2 days.</p>
 <form method="post" action="/?action=addToCart&id=<?= $id
@@ -194,7 +194,7 @@ foreach ($products as $id => $product)
 </form>
 
 <h2>Double Room</h2>
-<img src="../public/Images/DoubleRoom.jpg" alt="Double Room" height="500" width="500">
+<img src="public/Images/DoubleRoom.jpg" alt="Double Room" height="500" width="500">
 <p>Room Capacity: 2</p>
 <p>This room is a very roomy closure for two people to spend there time it comes with one double bed (Can be seperated) a bathroom and larger than average wardrobe for 2 people to share.</p>
 <form method="post" action="/?action=addToCart&id=<?= $id
@@ -202,7 +202,7 @@ foreach ($products as $id => $product)
     <button class="btn btn-primary btn-sm">Add To Cart</button>
 </form>
 <h2>Suite</h2>
-<img src="../public/Images/Suite.jpg" alt="Suite" height="500" width="500">
+<img src="public/Images/Suite.jpg" alt="Suite" height="500" width="500">
 <p>Room Capacity: 4</p>
 <p>This is our top of the line room for those who have multiple friends it consists of 4 bedrooms 3 bathrooms and 4 walk in wardrobes. This room is 2 floored and consists of our first class snackbar(anything taken will be added to your bill)</p>
 <form method="post" action="/?action=addToCart&id=<?= $id
@@ -210,7 +210,7 @@ foreach ($products as $id => $product)
     <button class="btn btn-primary btn-sm">Add To Cart</button>
 </form>
 
-<h3>Please select in our <a href="../public/CheckOut.php">checkout</a> page</h3>
+<h3>Please select in our <a href="public/CheckOut.php">checkout</a> page</h3>
 
 
 
