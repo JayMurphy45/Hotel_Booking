@@ -44,7 +44,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
   <nav>
     <ul>
-      <li><a href="..\index.php">Home</a></li>
+      <li><a href="http://localhost/Hotel_Booking/index.php">Home</a></li>
       <li><a href="public\LogIn.php">Login</a></li>
       <li><a href="public\Booking.php">Book a room</a></li>
       <li><a href="">About</a></li>

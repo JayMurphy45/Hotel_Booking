@@ -10,7 +10,7 @@
 
   <nav>
     <ul>
-      <li><a href="">Home</a></li>
+      <li><a href="http://localhost/Hotel_Booking/index.php">Home</a></li>
       <li><a href="">News</a></li>
       <li><a href="">Contact</a></li>
       <li><a href="">About</a></li>

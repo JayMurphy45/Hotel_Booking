@@ -67,6 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 </form>
 
 <p><a href="LogIn.php">Login</a></p>
+<a href="http://localhost/Hotel_Booking/index.php"><strong>Back to home</strong></a>
 
 </body>
 </html>

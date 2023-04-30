@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once(__DIR__ . '/../config.php');
+require_once(__DIR__ . '/config.php');
 
 if (isset($_POST['Submit'])) {
     $users = file('users.txt', FILE_IGNORE_NEW_LINES); // read the file as an array of lines
@@ -50,6 +50,7 @@ if (isset($_POST['Submit'])) {
     </form>
 
     <p><a href="SignUp.php">Sign Up</a></p>
+<a href="http://localhost/Hotel_Booking/index.php"><strong>Back to home</strong></a>
 
 </body>
 
