@@ -1,3 +1,1 @@
 George:$2y$10$Tk3tbd2dOBQAFx4LmzuX8e2VObQ3PxK3pRi1rftfc6CxPO2K3nBsa
-Terry:$2y$10$hGd0fk7UW1PvoTacgitmrOxBDlf8o2CyXeeO5aK4UvDHsIqat1./C
-Larry:$2y$10$nCUaHfNbLT7nTGtMkLoxTeltPBYHFHu/x/3DNGdsfiPreQBbhp4nu
