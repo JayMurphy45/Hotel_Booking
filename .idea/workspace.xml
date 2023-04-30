@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fb3cde10-e4a0-4624-a7e1-67024901adb3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/LogIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/LogIn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/SignUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/SignUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/LogIn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/SignUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/users/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/laragon/www/Hotel_Booking",
+    "last_opened_file_path": "C:/laragon/www/Hotel_Booking1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +63,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Hotel_Booking" />
+      <recent name="C:\laragon\www\Hotel_Booking\system" />
+      <recent name="C:\laragon\www\Hotel_Booking\public" />
+      <recent name="C:\laragon\www\Hotel_Booking\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,7 +92,12 @@
       <workItem from="1681675780132" duration="186000" />
       <workItem from="1681725346861" duration="599000" />
       <workItem from="1681742711691" duration="487000" />
-      <workItem from="1681806143958" duration="1146000" />
+      <workItem from="1681806143958" duration="1694000" />
+      <workItem from="1682064028859" duration="799000" />
+      <workItem from="1682322864242" duration="764000" />
+      <workItem from="1682330483021" duration="944000" />
+      <workItem from="1682338271858" duration="2586000" />
+      <workItem from="1682341752562" duration="4795000" />
     </task>
     <servers />
   </component>
