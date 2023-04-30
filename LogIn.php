@@ -1,22 +1,20 @@
-
 <?php
 session_start();
 require_once('config.php');
 
 if (isset($_POST['Submit'])) {
-    //check if username and passwords match
-    if ($_POST['username'] == $username && ($_POST['password'] == $password)) {
-
-        $_SESSION['username'] = $username; //store username to session
+    $users = file('users.txt', FILE_IGNORE_NEW_LINES); // read the file as an array of lines
+    foreach ($users as $user) {
+        list($username, $hashed_password) = explode(':', $user); // split each line into username and hashed password
+        if ($_POST['username'] == $username && password_verify($_POST['password'], $hashed_password)) {
+        $_SESSION['username'] = $username;
         $_SESSION['Active'] = true;
-        header("location: index.php"); // redirect browser
-        exit;//terminate code
-    } else {
-        
-        echo 'Incorrect Username or Password';
+        header("location: index.php");
+            exit;
+        }
     }
+    echo 'Incorrect Username or Password';
 }
-?>
 
 <!DOCTYPE html>
 <html lang="en">
