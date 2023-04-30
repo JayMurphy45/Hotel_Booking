@@ -137,13 +137,13 @@ class Booking
 /*
 Shopping cart Functionality
 */
-require_once __DIR__ . '/../src/functions.php';
+require_once __DIR__ . '/functions.php';
 
 $products = [];
 $products[] = [
     'name' => 'Single',
     'description' => 'Single Room',
-    'Price' => '200',
+    'price' => '200',
     'stars' => 4,
     'image' => 'Images/SingleRoom.avif'
 ];
@@ -151,7 +151,7 @@ $products[] = [
 $products[] = [
     'name' => 'Double',
     'description' => 'Double Room',
-    'Price' => '400',
+    'price' => '400',
     'stars' => 4,
     'image' => 'Images/DoubleRoom.avif'
 ];
@@ -159,12 +159,12 @@ $products[] = [
 $products[] = [
     'name' => 'Suite',
     'description' => 'Double Room',
-    'Price' => '400',
+    'price' => '400',
     'stars' => 4,
     'image' => 'Images/DoubleRoom.avif'
 ];
 
-require_once __DIR__ . '/../src/functions.php';
+require_once __DIR__ . '/functions.php';
 $products = getAllProducts();
 $cartItems = getShoppingCart();
 // choose page to display
@@ -179,41 +179,55 @@ if ('cart' == $action) {
 <?php require("Layouts/Header.php"); ?>
 <!-- For each to represent stars for rooms -->
 <?php
-foreach ($products as $id => $product)
+foreach ($products as $id => $product) 
     $price = number_format($product['price'], 2)
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="public/css/form.css">
+</head>
+<body>
+
 <h1>Booking Page</h1>
 
 <h2>Single Room</h2>
-<img src="Images/SingleRoom.avif" alt="Single Room" height="500" width="500">
+<img src="Images/SingleRoom.avif" alt="Single Room" height="250" width="250" class="center">
 <p>Room Capacity: 1</p>
 <p>This room is a very cosy delight for those who plan to stay alone for 1 or 2 days.</p>
 <form method="post" action="/?action=addToCart&id=<?= $id
-                                                    ?>" style="display: inline">
+                                                    ?>" style="display: center">
     <button class="btn btn-primary btn-sm">Add To Cart</button>
 </form>
 
 <h2>Double Room</h2>
-<img src="Images/DoubleRoom.jpg" alt="Double Room" height="500" width="500">
+<img src="Images/DoubleRoom.jpg" alt="Double Room" height="250" width="250" class="center">
 <p>Room Capacity: 2</p>
 <p>This room is a very roomy closure for two people to spend there time it comes with one double bed (Can be seperated) a bathroom and larger than average wardrobe for 2 people to share.</p>
 <form method="post" action="/?action=addToCart&id=<?= $id
-                                                    ?>" style="display: inline">
+                                                    ?>" style="display: center">
     <button class="btn btn-primary btn-sm">Add To Cart</button>
 </form>
+
 <h2>Suite</h2>
-<img src="Images/Suite.jpg" alt="Suite" height="500" width="500">
+
+<div class="center">
+<img src="Images/Suite.jpg" alt="Suite" height="250" width="250" >
+</div>
+
 <p>Room Capacity: 4</p>
 <p>This is our top of the line room for those who have multiple friends it consists of 4 bedrooms 3 bathrooms and 4 walk in wardrobes. This room is 2 floored and consists of our first class snackbar(anything taken will be added to your bill)</p>
 <form method="post" action="/?action=addToCart&id=<?= $id
-                                                    ?>" style="display: inline">
+                                                    ?>" style="display: center">
     <button class="btn btn-primary btn-sm">Add To Cart</button>
 </form>
 
-<h3>Please select in our <a href="CheckOut.php">checkout</a> page</h3>
+<p>Please select in our <a href="CheckOut.php">checkout</a> page</p class="bottom>
 
-
-
-
+</body>
+</html>
 
 <?php require("Layouts/Footer.php") ?>

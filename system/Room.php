@@ -66,14 +66,17 @@ class Room
         $this->room = $room;
     }
 
-    public function displayRoom(){
-        echo "Room Number: {$this->roomNum}\n";
-        echo "Room Capacity: {$this->roomCapacity}\n";
-        echo "Room: {$this->getRoom()} \n";
+
+
+
+
+
+
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return "RoomNum: {$this->roomNum}, RoomCapacity: {$this->roomCapacity}, Room: {$this->room}";
     }
-
-
 }
-
-
-

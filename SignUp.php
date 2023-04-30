@@ -1,6 +1,7 @@
 <?php
+
 //create credentials
-if ($_SERVER['REQUEST_METHOD'] === ['POST']){
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $username = $_POST['username'];
     $password = $_POST['password'];
     $confirmPassword = $_POST['confirm_password'];
@@ -14,6 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === ['POST']){
     if (empty($password))
     {
         $errors[] = 'Password is required';
+    } else if (strlen($password) < 8 || !preg_match("#[0-9]+#", $password) || !preg_match("#[a-z]+#", $password) || !preg_match("#[A-Z]+#", $password)) {
+        $errors[] = 'Password must be a minimum of 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.'; //Password Validation
     }
     if ($password !== $confirmPassword)
     {
@@ -31,16 +34,18 @@ if ($_SERVER['REQUEST_METHOD'] === ['POST']){
 }
 ?>
 
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Signup</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="public/css/form.css">
 </head>
 <body>
+
 <!--- Print error if credentials are incorrect----->
-<?php if (isset($errors)) { ?>
+<?php if (!empty($errors)) { ?>
     <?php foreach ($errors as $error) { ?>
         <div><?php echo $error; ?></div>
     <?php } ?>
@@ -62,5 +67,6 @@ if ($_SERVER['REQUEST_METHOD'] === ['POST']){
 </form>
 
 <p><a href="LogIn.php">Login</a></p>
+
 </body>
 </html>

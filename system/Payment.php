@@ -2,10 +2,10 @@
 
 class Payment
 {
-     private int $paymentID;
-     private string $cardNum;
-     private int $amount;
-     private string $date;
+    private int $paymentID;
+    private string $cardNum;
+    private int $amount;
+    private string $date;
 
     /**
      * @param int $paymentID
@@ -87,5 +87,11 @@ class Payment
 
 
 
-
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return "PaymentID: {$this->paymentID}, CardNum: {$this->cardNum}, Amount: {$this->amount}, Date: {$this->date}";
+    }
 }
