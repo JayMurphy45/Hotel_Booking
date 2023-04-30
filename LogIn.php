@@ -1,22 +1,19 @@
 <?php
 require_once('config.php');
 
-if ($_POST['Submit']) {
+if (isset($_POST['Submit'])) {
     //check if username and passwords match
     if ($_POST['username'] == $username && ($_POST['password'] == $password)) {
 
         $_SESSION['username'] = $username; //store username to session
         $_SESSION['Active'] = true;
-        header("location::index.php"); // redirect browser
+        header("location: index.php"); // redirect browser
         exit;//terminate code
     } else {
         
-        echo 'Incorrect username or password';
+        echo 'Incorrect Username or Password';
     }
 }
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -43,11 +40,11 @@ if ($_POST['Submit']) {
         <label for="Password">Password</label>
         <input type="password" name="password">
 
-        <button type="submit">Login</button>
+        <button type="submit" name="Submit">Login</button>
 
     </form>
 
-    <p><a href="public/SignUp.php">Sign Up</a></p>
+    <p><a href="SignUp.php">Sign Up</a></p>
 
 </body>
 
