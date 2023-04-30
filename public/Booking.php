@@ -188,7 +188,7 @@ foreach ($products as $id => $product)
 <head>
     <meta charset="UTF-8">
     <title>Booking</title>
-    <link rel="stylesheet" href="public/css/form.css">
+    <link rel="stylesheet" href="/public/css/form.css">
 </head>
 <body>
 

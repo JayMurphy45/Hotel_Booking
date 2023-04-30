@@ -1,3 +1,6 @@
-Luke1:$2y$10$Y5RXyFcxPqxyTXxfLjYEDe4bTNLlX6MfnC8whqaLXwNo5wdi24Blm
-Luke2:$2y$10$s7BFAni4U3IC7xMKu7fmK.e2duD/wXzMmq6usgWq7hSz7ojDNIYq6
-Luke:$2y$10$mvbGOis0XfJQ0c9Rv.arveUhHyUmakN2wOoqlICXD.pvjZayKJPBa
+
+Luke:$2y$10$3GqGvmruY3E07Z8.N3NYretuihW7Z3ki/iblYbMPfK..bH5H6aP6C
+Terry:$2y$10$aOL80M0JS/aKl5l1bY2y.OmVnHVj34CvoWYEUBrn1mFIdsOdflgmG
+Terry:$2y$10$I0fek.jW/NehkF6OLHkLC.tZkRfRWg/wyTtVqjUVusfxi1m40Fwwe
+Terry:$2y$10$lcqF/KQq8PZ6Rm1TmRugyeewzg2K/yRUc3i6VCpuFL8OYBSE/xdXG
+Terry:$2y$10$VOkPY9WZRciDhSozxyXVMOFCi.R3GiLXaCYvU.iJCoNgNG./Erm6a

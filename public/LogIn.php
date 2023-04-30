@@ -1,20 +1,22 @@
 <?php
 session_start();
-require_once('config.php');
+require_once(__DIR__ . '/../config.php');
 
 if (isset($_POST['Submit'])) {
     $users = file('users.txt', FILE_IGNORE_NEW_LINES); // read the file as an array of lines
     foreach ($users as $user) {
         list($username, $hashed_password) = explode(':', $user); // split each line into username and hashed password
-        if ($_POST['username'] == $username && password_verify($_POST['password'], $hashed_password)) {
-        $_SESSION['username'] = $username;
+        if ($_POST['username'] == $username && password_verify($_POST['password'], $hashed_password)) { //Checks that the hashed password matches
+        $_SESSION['username'] = $username; //Saves username to the seesion
         $_SESSION['Active'] = true;
-        header("location: index.php");
-            exit;
+        header("location: ../Booking.php"); //Redirects to the index page
+            
+        exit;
         }
     }
     echo 'Incorrect Username or Password';
 }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,10 +26,13 @@ if (isset($_POST['Submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="public/css/form.css">
+    <link rel="stylesheet" href="/public/css/form.css">
+
+
 </head>
 
 <body>
+    
     <?php if (isset($error)) { ?>
         <div><?php echo $error ?></div>
     <?php } ?>

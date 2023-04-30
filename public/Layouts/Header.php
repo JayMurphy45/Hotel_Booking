@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php 
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -39,9 +44,9 @@
 
   <nav>
     <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">News</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="..\index.php">Home</a></li>
+      <li><a href="public\LogIn.php">Login</a></li>
+      <li><a href="public\Booking.php">Book a room</a></li>
       <li><a href="">About</a></li>
     </ul>
   </nav>

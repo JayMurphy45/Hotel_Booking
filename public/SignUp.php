@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $file = 'users.txt';
         $data = $username . ':' . password_hash($password, PASSWORD_DEFAULT) . "\n";
         file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-        header('Location: login.php');
+        header('Location: LogIn.php');
         exit;
     }
 }
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="public/css/form.css">
+    <link rel="stylesheet" href="/public/css/form.css">
 </head>
 <body>
 

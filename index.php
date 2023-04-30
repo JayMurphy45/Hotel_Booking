@@ -1,6 +1,9 @@
 <?php 
-if($_SESSION['Active'] == false){
-    header("location::login.php");
+session_start(); // Initialize the session
+
+// Check if user is not logged in, then redirect to login page
+if(!isset($_SESSION['username'])){
+    header("Location: LogIn.php");
     exit;
 }
 
@@ -21,7 +24,7 @@ if($_SESSION['Active'] == false){
 <body>
     <?php
         echo "<h1>Index Page</h1>";
-        require("Layouts/Header.php");
+        require("public/Layouts/Header.php");
     ?>
     
     <font size= 6>
@@ -32,11 +35,11 @@ if($_SESSION['Active'] == false){
     <center>
     <ul>
         <font size= 5>
-        <li><a href="public/Booking.php">Booking</a></li>
-        <li><a href="public/CheckOut.php">Check Out</a></li>
-        <li><a href="LogIn.php">Login</a></li>
-        <li><a href="SignUp.php">Sign Up</a></li>
-        <li><a href="public/userProfile.php">Profile</a></li>
+        <li><a href="public\Booking.php">Booking</a></li>
+        <li><a href="public\CheckOut.php">Check Out</a></li>
+        <li><a href="public\LogIn.php">Login</a></li>
+        <li><a href="public\SignUp.php">Sign Up</a></li>
+        <li><a href="public\userProfile.php">Profile</a></li>
         </font>
         
     </ul>
