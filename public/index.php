@@ -1,8 +1,8 @@
 <?php 
-if($_SESSION['Active'] == false){
-    header("location::login.php");
-    exit;
-}
+//if($_SESSION['Active'] == false){
+//    header("location::login.php");
+//    exit;
+//}
 
 
 

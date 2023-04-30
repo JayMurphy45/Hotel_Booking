@@ -137,7 +137,7 @@ class Booking
 /*
 Shopping cart Functionality
 */
-require_once __DIR__ . '/functions.php';
+require_once __DIR__ . '/../src/functions.php';
 
 $products = [];
 $products[] = [
@@ -164,7 +164,7 @@ $products[] = [
     'image' => 'Images/DoubleRoom.avif'
 ];
 
-require_once __DIR__ . '/functions.php';
+require_once __DIR__ . '/../src/functions.php';
 $products = getAllProducts();
 $cartItems = getShoppingCart();
 // choose page to display
@@ -193,6 +193,8 @@ foreach ($products as $id => $product)
 <body>
 
 <h1>Booking Page</h1>
+
+<hr>
 
 <h2>Single Room</h2>
 <img src="Images/SingleRoom.avif" alt="Single Room" height="250" width="250" class="center">
